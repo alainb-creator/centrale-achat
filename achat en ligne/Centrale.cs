@@ -9,26 +9,26 @@ namespace achat_en_ligne
     class Centrale
     {
 
-        public List<Article> Articles { get; set; }
-        public List<User> Users { get; set; }
+        public List<Article> Articles { get; set; } //crée liste article selon class article
+        public List<User> Users { get; set; }   //crée liste user selon class user
 
-        public Centrale()
+        public Centrale()   //constructeur
         {
             Articles = new List<Article> { };
             Users = new List<User> { };
         }
 
-        public Client CreateClientAccount(string Nom, string Mail, string Password)
+        public Client CreateClientAccount(string Nom, string Mail, string Password) //cree compte client
         {
             // crée compte client
             throw new NotImplementedException();
         }
-        public Client CreateVendeurAccount(string Nom, string Mail, string Password)
+        public Client CreateVendeurAccount(string Nom, string Mail, string Password) //crée compte vendeur
         {
             //crée compte vendeur
             throw new NotImplementedException();
         }
-        public User Login(string mail, string password)
+        public User Login(string mail, string password) // crée login user
         {
             List<User> tmp = Users.Where((user) => user.Mail.Equals(mail)).ToList();
             User LoggingIn = null;
@@ -40,7 +40,7 @@ namespace achat_en_ligne
              throw new ArgumentException();
             return LoggingIn;
         }
-        public void AddArticle(Article article)
+        public void AddArticle(Article article) 
         {
             // ajoute article a la liste
             Articles.Add(article);
@@ -57,7 +57,7 @@ namespace achat_en_ligne
             // Modifie article ou desactive and ajoute nouvel article
             article.Stock = stock;
         }
-        public List<Article> SearchArticles(string searchInput)
+        public List<Article> SearchArticles(string searchInput) //recherche article
         {
             List<Article> SearchResults = new List<Article> { };
             foreach (Article article in Articles)
@@ -93,7 +93,7 @@ namespace achat_en_ligne
                 mail = Console.ReadLine();
                 Console.WriteLine("Wrong Password, try again");
                 passwrd = Console.ReadLine();
-                LoginTryCatch(mail, passwrd);
+                user=LoginTryCatch(mail, passwrd);
 
             }
             return user;

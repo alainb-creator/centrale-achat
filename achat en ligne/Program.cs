@@ -24,13 +24,13 @@ namespace achat_en_ligne
             Client clicli = (Client)client;
             centrale.Users.Add(client);
             centrale.Users.Add(vendeur);
-             /* Console.WriteLine("Enter eMail adress");
+              Console.WriteLine("Enter eMail adress");
           string mail = Console.ReadLine();
           Console.WriteLine("enter password");
           string passwrd = Console.ReadLine();
           User LogClient = centrale.LoginTryCatch(mail, passwrd);
           Console.WriteLine(LogClient.Nom);
-         */
+         
 
             //on castre la variable vendeur(déclarée de type user) dans le type vendeur
             Article art = new Article("velo", "un super velo", 100.5, (Vendeur)vendeur);
@@ -50,6 +50,7 @@ namespace achat_en_ligne
              
                 Console.WriteLine(article.Name);
                 Console.WriteLine(article.Description);
+                Console.WriteLine(article.Price);
             }
             Console.ReadKey();
         }

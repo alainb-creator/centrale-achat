@@ -12,11 +12,11 @@ namespace achat_en_ligne
         public string Description { get; set; }
         public double Price { get; set; }
         public bool Active { get; set; }
-        public List<Commentaire>Commentaires { get; set; }
+        public List<Commentaire>Commentaires { get; set; } // crée liste de commentaire
         public int Stock { get; set; }
         public List<KeyValuePair<Client,int>>Reservation { get; set; } // crée liste de réservation
-        public Vendeur Vendeur { get; set; }
-        public Article(string name,string description,double price,Vendeur vendeur)
+        public Vendeur Vendeur { get; set; } // crée vendeur suivant class vendeur
+        public Article(string name,string description,double price,Vendeur vendeur) //constructeur
 
         {
             Name = name;

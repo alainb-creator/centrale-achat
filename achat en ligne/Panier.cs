@@ -9,22 +9,22 @@ namespace achat_en_ligne
     class Panier
     {
         public Client Client {get; set;}
-       public List<KeyValuePair<Article, int>> Articles { get; set; }
+       public List<KeyValuePair<Article, int>> Articles { get; set; } // cree liste article
 
-        public Panier(Client client)
+        public Panier(Client client)    // constructeur
         {
             Client = client;
             Articles = new List<KeyValuePair<Article, int>> { };
         }
-        public void AddArticleToPanier(Article article, int quantite)
+        public void AddArticleToPanier(Article article, int quantite) //ajout article au panier
         {
             Articles.Add(new KeyValuePair<Article, int>(article, quantite));
         }
-        public void ModifyQuantityInPanier(Article article, int newQuantity)
+        public void ModifyQuantityInPanier(Article article, int newQuantity) //modifie quantité article panier
         {
             throw new NotImplementedException();
         }
-        public void RemoveArticleFromPanier(Article article)
+        public void RemoveArticleFromPanier(Article article)    // supprimer article du panier
         {
             throw new NotImplementedException();
         }

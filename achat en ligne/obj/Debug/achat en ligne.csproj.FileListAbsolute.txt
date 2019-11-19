@@ -4,3 +4,9 @@ C:\Users\Formation\achat en ligne\achat en ligne\achat en ligne\bin\Debug\achat 
 C:\Users\Formation\achat en ligne\achat en ligne\achat en ligne\bin\Debug\achat en ligne.pdb
 C:\Users\Formation\achat en ligne\achat en ligne\achat en ligne\obj\Debug\achat en ligne.exe
 C:\Users\Formation\achat en ligne\achat en ligne\achat en ligne\obj\Debug\achat en ligne.pdb
+C:\Users\Formation\centrale-achat\achat en ligne\bin\Debug\achat en ligne.exe.config
+C:\Users\Formation\centrale-achat\achat en ligne\bin\Debug\achat en ligne.exe
+C:\Users\Formation\centrale-achat\achat en ligne\bin\Debug\achat en ligne.pdb
+C:\Users\Formation\centrale-achat\achat en ligne\obj\Debug\achat en ligne.csprojAssemblyReference.cache
+C:\Users\Formation\centrale-achat\achat en ligne\obj\Debug\achat en ligne.exe
+C:\Users\Formation\centrale-achat\achat en ligne\obj\Debug\achat en ligne.pdb
